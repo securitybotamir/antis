@@ -86,7 +86,7 @@ local service = msg.service
 local name_log = user_print_name(msg.from)
 if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel" then
 	if is_gbanned(msg.from.id) then
-        return '<i>✨شما گولبال بن هستید✨.\n ✨برای ازاد کردن خود به SmartTG.ir یا ربات @GetandroidBot مراجعه کنید✨</i>'
+        return '<i>✨شما گولبال بن هستید✨.\n ✨برای ازاد کردن خود به @TT_Antispam یا آیدی @amirtabrizli1 مراجعه کنید✨</i>'
 	end
     if matches[1] == 'join' then
 	local data = load_data(_config.moderation.data)
@@ -95,7 +95,7 @@ if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel"
 		local target = 1041751030
 		local long_id = data[tostring(target)]['long_id']
 		if is_banned(msg.from.id, tostring(target)) then
-			return '<i>✨شما بن هستید.برای ازاد کردن خود به SmartTG.ir یا ربات @GetandroidBot مراجعه کنید✨</i>'
+			return '<i>✨شما گولبال بن هستید✨.\n ✨برای ازاد کردن خود به @TT_Antispam یا آیدی @amirtabrizli1 مراجعه کنید✨</i>'
 		end
 		if data[tostring(target)]['settings']['lock_member'] == 'yes' and not is_owner2(msg.from.id, tostring(target)) then
 			return 'Group is private.'
@@ -116,7 +116,7 @@ if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel"
 		local target = 1017700355
 		local long_id = data[tostring(target)]['long_id']
 		if is_banned(msg.from.id, tostring(target)) then
-			return '<i>✨شما بن هستید.برای ازاد کردن خود به SmartTG.ir یا ربات @GetandroidBot مراجعه کنید✨</i>'
+			return '<i>✨شما گولبال بن هستید✨.\n ✨برای ازاد کردن خود به @TT_Antispam یا آیدی @amirtabrizli1 مراجعه کنید✨</i>'
 		end
 		if data[tostring(target)]['settings']['lock_member'] == 'yes' and not is_owner2(msg.from.id, '36088606') then
 			return 'Group is private.'
@@ -208,7 +208,7 @@ if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel"
 
 	if matches[1] == 'help' and msg.to.type == 'user' or matches[1] == 'pmhelp' and is_admin1(msg) and msg.to.type ~= 'user' then
       	savelog(msg.to.id, name_log.." ["..msg.from.id.."] used pm help")
-		text = " <i>✨خوش آمدید✨!\n\n>برای دریافت گروه یا مدیریت گروه شما  یا ربات @NECCBOT مراجعه کنید! یا بایکی از مدیران در تماس باشید, برای اینکار کانال را چک کنید:\n[@Getandroid] \n\nبااستفاده از دستور 'راهنما' لیست دستورات را دریافت کنید!!\n\n✨باتشکر از انتخاب @Getandroid✨ </i>"
+		text = " <i>✨خوش آمدید✨!\n\n>برای دریافت گروه یا مدیریت گروه شما  یا آیدی @AmirTabrizli1 مراجعه کنید! یا بایکی از مدیران در تماس باشید, برای اینکار کانال را چک کنید:\n[@TT_AntiSpam] \n\nبااستفاده از دستور 'راهنما' لیست دستورات را دریافت کنید!!\n\n✨باتشکر از انتخاب @TT_AntiSpam✨ </i>"
      	return text
     end
 
