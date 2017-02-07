@@ -68,7 +68,7 @@ function run(msg, matches)
 
 ⏱expire(تاریخ انقضای ربات)    
 〰〰〰〰〰〰〰
-✨ کانال ربات آنتی اسپم تی تی: @TT_AntiSpam ✨
+✨ کانال ربات آنتی اسپم تی تی: @TT_AntiSpam  ✨
     آیدی سازنده ی ربات: @AmirTabrizli1
 </i>]]
 end
