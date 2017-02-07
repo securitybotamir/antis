@@ -37,39 +37,39 @@ local function pre_process(msg)
 		if msg.text:match('/') then
 		rem_mutes(msg.to.id)
 		superrem2(msg)
-		return send_large_msg(get_receiver(msg), '<i>✨تاریخ اتقضای گروه به پایان رسید.✨</i>\nبرای تمدید از سایت http://Tarfand.pro یا ربات @NECCBOT اقدام کنید✨')
+		return send_large_msg(get_receiver(msg), '<i>✨تاریخ اتقضای گروه به پایان رسید.✨</i>\nبرای تمدید از کانال @TT_Antispam یا آیدی @AmirTabrizli1 اقدام کنید✨')
 		else
 			return
 		end
 	end
 	if tonumber(timetoexpire) == 0 then
 		if redis:hget('expires0',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '<i>✨0 روز تا پایان تاریخ انقضای گروه باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨ربات جهت تمدید: @NECCBOT✨\n✨سایت جهت تمدید: Tarfand.pro✨</i>')
+		send_large_msg(get_receiver(msg), '<i>✨0 روز تا پایان تاریخ انقضای ربات باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨آیدی جهت تمدید: @AmirTabrizli1✨\n✨کانال جهت تمدید: @TT_Antispam✨</i>')
 		redis:hset('expires0',msg.to.id,'5')
 	end
 	if tonumber(timetoexpire) == 1 then
 		if redis:hget('expires1',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '<i>✨1 روز تا پایان تاریخ انقضای گروه باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨ربات جهت تمدید: @NECCBOT✨\n✨سایت جهت تمدید: Tarfand.pro✨t</i>')
+		send_large_msg(get_receiver(msg), '<i>✨1 روز تا پایان تاریخ انقضای ربات باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨آیدی جهت تمدید: @AmirTabrizli1✨\n✨کانال جهت تمدید: @TT_Antispam✨</i>')
 		redis:hset('expires1',msg.to.id,'5')
 	end
 	if tonumber(timetoexpire) == 2 then
 		if redis:hget('expires2',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '<i>✨2 روز تا پایان تاریخ انقضای گروه باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨ربات جهت تمدید: @NECCBOT✨\n✨سایت جهت تمدید: Tarfand.pro✨</i>')
+		send_large_msg(get_receiver(msg), '<i>✨2روز تا پایان تاریخ انقضای ربات باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨آیدی جهت تمدید: @AmirTabrizli1✨\n✨کانال جهت تمدید: @TT_Antispam✨</i></i>')
 		redis:hset('expires2',msg.to.id,'5')
 	end
 	if tonumber(timetoexpire) == 3 then
 		if redis:hget('expires3',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '<i>✨3 روز تا پایان تاریخ انقضای گروه باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨ربات جهت تمدید: @NECCBOT✨\n✨سایت جهت تمدید: Tarfand.pro✨</i>')
+		send_large_msg(get_receiver(msg), '<i>✨3 روز تا پایان تاریخ انقضای ربات باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨آیدی جهت تمدید: @AmirTabrizli1✨\n✨کانال جهت تمدید: @TT_Antispam✨</i></i>')
 		redis:hset('expires3',msg.to.id,'5')
 	end
 	if tonumber(timetoexpire) == 4 then
 		if redis:hget('expires4',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '<i>✨4 روز تا پایان تاریخ انقضای گروه باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨ربات جهت تمدید: @NECCBOT✨\n✨سایت جهت تمدید: Tarfand.pro✨</i>')
+		send_large_msg(get_receiver(msg), '<i>✨4 روز تا پایان تاریخ انقضای ربات باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨آیدی جهت تمدید: @AmirTabrizli1✨\n✨کانال جهت تمدید: @TT_Antispam✨</i>')
 		redis:hset('expires4',msg.to.id,'5')
 	end
 	if tonumber(timetoexpire) == 5 then
 		if redis:hget('expires5',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '<i>✨5 روز تا پایان تاریخ انقضای گروه باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨ربات جهت تمدید: @NECCBOT✨\n✨سایت جهت تمدید: Tarfand.pro✨</i>')
+		send_large_msg(get_receiver(msg), '<i>✨5 روز تا پایان تاریخ انقضای ربات باقی مانده است✨\n✨نسبت به تمدید اقدام کنید✨\n✨آیدی جهت تمدید: @AmirTabrizli1✨\n✨کانال جهت تمدید: @TT_Antispam✨</i>')
 		redis:hset('expires5',msg.to.id,'5')
 	end
 end
